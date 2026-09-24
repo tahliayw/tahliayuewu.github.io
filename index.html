@@ -18,6 +18,8 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="robot.html">Robot Traverse</a>
       <a href="machining.html">Machining</a>
+      <a href="shelf.html">Shelf</a>
+      <a href="lightbox.html">Light Box</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </div>
@@ -26,32 +28,115 @@
 <main>
 
   <section class="hero">
-    <!-- REPLACE: name + tagline + intro -->
-    <h1>Your Name</h1>
-    <p class="tagline">Mechanical Engineering, University of Pennsylvania — Class of 2027</p>
-    <p class="intro">I build things that move and things that run hot — from a closed-loop robotic traverse for wind-wake research to a Stirling engine machined from raw stock. This site walks through both, start to finish.</p>
+    <div>
+      <!-- REPLACE: name + tagline + intro -->
+      <h1>Your Name</h1>
+      <p class="tagline">Mechanical Engineering, University of Pennsylvania — Class of 2027</p>
+      <p class="intro">I build things that move and things that run hot — from a closed-loop robotic traverse for wind-wake research to a Stirling engine machined from raw stock. This site walks through both, plus a few smaller builds.</p>
+    </div>
+    <div class="headshot-frame">
+      <!--
+        REPLACE ME: delete the placeholder-text div below and uncomment this line.
+        Put your headshot at images/headshot.jpg
+      -->
+      <!-- <img src="images/headshot.jpg" alt="Portrait of Your Name"> -->
+      <div class="placeholder-text">Headshot placeholder — replace with images/headshot.jpg (square crop works best)</div>
+    </div>
   </section>
 
   <section class="section-head">
     <h2>Selected work</h2>
+    <p>Click through any project for process, media, and results.</p>
   </section>
 
-  <section class="projects-grid">
-
-    <a class="spec-card" href="robot.html">
-      <span class="fig-label">Fig. 01</span>
+  <!-- SPOTLIGHT PROJECT — your flagship. Swap which project sits here if your focus changes. -->
+  <a class="spec-card spotlight-card" href="robot.html">
+    <div class="card-media">
+      <!--
+        REPLACE ME: delete the placeholder-text div below and uncomment this block.
+        A short looping clip works best here — put it at videos/robot-loop.mp4
+      -->
+      <!--
+      <video autoplay muted loop playsinline poster="images/robot-poster.jpg">
+        <source src="videos/robot-loop.mp4" type="video/mp4">
+      </video>
+      -->
+      <div class="placeholder-text">Looping video placeholder — replace with videos/robot-loop.mp4 (5–10 sec clip, autoplay/muted/loop)</div>
+    </div>
+    <div class="spec-card-body">
+      <span class="fig-label">Fig. 01 — Featured project</span>
       <h3>Robotic Traverse — Closed-Loop Wind-Wake Study</h3>
       <!-- REPLACE: one or two sentence summary -->
       <p>An end-to-end motion-controlled traverse built for wind turbine wake experiments — OptiTrack motion capture, PID control, and LabVIEW integration driving a Raspberry Pi and DC motors.</p>
+      <!-- REPLACE: edit/add/remove skill tags for this project -->
+      <ul class="tag-list">
+        <li>PID Control</li>
+        <li>OptiTrack</li>
+        <li>Raspberry Pi</li>
+        <li>LabVIEW</li>
+      </ul>
       <span class="card-cta">View project</span>
-    </a>
+    </div>
+  </a>
+
+  <!-- SMALLER PROJECTS -->
+  <section class="small-grid">
 
     <a class="spec-card" href="machining.html">
-      <span class="fig-label">Fig. 02</span>
-      <h3>Stirling Engine — Machined From Stock</h3>
-      <!-- REPLACE: one or two sentence summary -->
-      <p>A working Stirling engine machined by hand and CNC — lathe, manual milling, CNC in Mastercam, laser-cut components, and a hand-finished polish.</p>
-      <span class="card-cta">View project</span>
+      <div class="card-media">
+        <!-- REPLACE ME: uncomment once you have the photo at images/engine-cover.jpg -->
+        <!-- <img src="images/engine-cover.jpg" alt="Finished Stirling engine"> -->
+        <div class="placeholder-text">Cover photo — images/engine-cover.jpg</div>
+      </div>
+      <div class="spec-card-body">
+        <span class="fig-label">Fig. 02</span>
+        <h3>Stirling Engine</h3>
+        <!-- REPLACE: one sentence summary -->
+        <p>Machined from stock — lathe, manual and CNC milling, laser-cut parts, hand polish.</p>
+        <ul class="tag-list">
+          <li>CNC / Mastercam</li>
+          <li>Lathe</li>
+        </ul>
+        <span class="card-cta">View project</span>
+      </div>
+    </a>
+
+    <a class="spec-card" href="shelf.html">
+      <div class="card-media">
+        <!-- REPLACE ME: uncomment once you have the photo at images/shelf-cover.jpg -->
+        <!-- <img src="images/shelf-cover.jpg" alt="Laser-cut floating shelf"></div> -->
+        <div class="placeholder-text">Cover photo — images/shelf-cover.jpg</div>
+      </div>
+      <div class="spec-card-body">
+        <span class="fig-label">Fig. 03</span>
+        <h3>Floating Shelf</h3>
+        <!-- REPLACE: one sentence summary -->
+        <p>A laser-cut floating shelf, custom-designed and assembled without visible hardware.</p>
+        <ul class="tag-list">
+          <li>Laser Cutting</li>
+          <li>CAD</li>
+        </ul>
+        <span class="card-cta">View project</span>
+      </div>
+    </a>
+
+    <a class="spec-card" href="lightbox.html">
+      <div class="card-media">
+        <!-- REPLACE ME: uncomment once you have the photo at images/lightbox-cover.jpg -->
+        <!-- <img src="images/lightbox-cover.jpg" alt="Laser-cut light box figurine shelf"></div> -->
+        <div class="placeholder-text">Cover photo — images/lightbox-cover.jpg</div>
+      </div>
+      <div class="spec-card-body">
+        <span class="fig-label">Fig. 04</span>
+        <h3>Light Box Figurine Shelf</h3>
+        <!-- REPLACE: one sentence summary -->
+        <p>A backlit, laser-cut display shelf designed to showcase figurines with layered light.</p>
+        <ul class="tag-list">
+          <li>Laser Cutting</li>
+          <li>Lighting Design</li>
+        </ul>
+        <span class="card-cta">View project</span>
+      </div>
     </a>
 
   </section>

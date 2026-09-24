@@ -17,6 +17,8 @@
       <a href="index.html">Home</a>
       <a href="robot.html" aria-current="page">Robot Traverse</a>
       <a href="machining.html">Machining</a>
+      <a href="shelf.html">Shelf</a>
+      <a href="lightbox.html">Light Box</a>
       <a href="content.html">Contact</a>
     </nav>
   </div>
@@ -27,8 +29,44 @@
   <section class="project-head">
     <span class="tag">Fig. 01 — Robotics &amp; controls</span>
     <h1>Robotic Traverse — Closed-Loop Wind-Wake Study</h1>
-    <!-- REPLACE: 2-4 sentence project overview -->
-    <p>An end-to-end robotic traverse system designed to position a sensor rig across a wind turbine wake for experimental fluid measurements. The system closes the loop with OptiTrack motion capture feeding a PID controller running on a Raspberry Pi, driving DC motors, with LabVIEW handling data acquisition and coordination.</p>
+    <!-- REPLACE: edit/add/remove skill tags to match this project -->
+    <ul class="tag-list">
+      <li>PID Control</li>
+      <li>OptiTrack Motion Capture</li>
+      <li>Raspberry Pi</li>
+      <li>LabVIEW</li>
+      <li>DC Motors</li>
+      <li>CAD</li>
+    </ul>
+  </section>
+
+  <!-- WRITING TEMPLATE: replace the text inside each <p>. The .hint lines are instructions for you — delete them once you've written your own copy. Use <strong>bold</strong> around specific technical terms you want to stand out. -->
+  <section class="brief">
+
+    <div class="brief-block">
+      <h2><span class="step-index">01</span> The problem</h2>
+      <p class="hint">What need or assignment prompted this? What constraints did you have — course requirements, lab goals, timeline, budget?</p>
+      <p><!-- REPLACE --> This project began as part of a wind energy research lab studying wake behavior behind scaled wind turbine models. The lab needed a way to automatically position a sensor across the wake with <strong>sub-millimeter repeatability</strong>, which ruled out manual positioning.</p>
+    </div>
+
+    <div class="brief-block">
+      <h2><span class="step-index">02</span> My approach</h2>
+      <p class="hint">How did you plan the solution? What design decisions did you make, and why did you choose this architecture over alternatives?</p>
+      <p><!-- REPLACE --> I designed a closed-loop system: <strong>OptiTrack motion capture</strong> tracks the sensor rig's real-time position, a <strong>PID controller</strong> running on a Raspberry Pi computes the correction, and DC motors drive the traverse. LabVIEW coordinates data acquisition so the system logs both position and sensor readings in sync.</p>
+    </div>
+
+    <div class="brief-block">
+      <h2><span class="step-index">03</span> What I built</h2>
+      <p class="hint">Describe the final system. What are the key specs — speed, precision, range? What did you personally design, build, and code?</p>
+      <p><!-- REPLACE --> I built the full stack end-to-end: the mechanical traverse frame, the motor mounts, the PID control loop in Python, and the LabVIEW interface tying it to the OptiTrack system. The system achieves <strong>[X mm] positioning accuracy</strong> across a <strong>[X meter] travel range</strong>.</p>
+    </div>
+
+    <div class="brief-block">
+      <h2><span class="step-index">04</span> Results &amp; what I'd improve</h2>
+      <p class="hint">Quantify results where you can (tracking error, settling time, data collected). Then note what you'd change with more time or a second version.</p>
+      <p><!-- REPLACE --> The traverse ran successfully across <strong>[X] experimental trials</strong>, collecting wake velocity data used in [purpose]. If I rebuilt this, I'd [upgrade / change] to improve [specific limitation].</p>
+    </div>
+
   </section>
 
   <!-- VIDEO 1 -->
